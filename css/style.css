@@ -5,17 +5,44 @@
 }
 
 /* font-family: 'Roboto', sans-serif; */
+body{
+    background-color: #ededed;
+}
 
+.btn_mini{
+    width: 202px;
+    height: 50px;
+    background-color: #F49714;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
 
+.fs20px{
+    font-size: 20px;
+    color: #3D433F;
+    letter-spacing: 2px;
+}
+
+.fs30px{
+    font-size: 30px;
+    color: #3D433F;
+    letter-spacing: 4px;
+}
 
 .property_servis .container {
   width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 .property_servis .container .header {
   background-image: url(/img/Group108.png);
-  height: 1040px;
+  height: 1032px;
   display: flex;  
   flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
@@ -89,10 +116,6 @@
     align-items: center;
 }
 
-.fs20px{
-    font-size: 20px;
-    color: #3D433F;
-}
 
 .property_text{
     margin-left: 2%
@@ -135,4 +158,114 @@
         height: 54px;
         border: solid 1px #c4c4c4;
 }
+
+/* ------------------------------------------------------------------------------------------------ */
+.promo_content{
+    width: 1440px;
+}
+
+.promo_content h2,
+.reviews h2{
+    font-size: 60px;
+    margin: 6% 0px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.promo_content_way{
+    height: 1032px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.promo_content_block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+    height: 33%;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.why{
+    height: 800px;
+    display: flex;
+    margin: 0 2%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.why_content{
+    max-width: 33.3%;
+    width: 311px;
+    height: 50%;
+    text-align: center;
+}
+
+.why_content h3,
+.project_window h3{
+    margin: 10px 0px 20px 0px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.promo_content_project{
+    text-align: center;
+}
+
+.content_project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project_window{
+    border: solid 2px #4BB165;
+    border-radius: 10px;
+    width: 33%;
+    margin-bottom: 60px;
+    padding: 3%;
+}
+
+.project_window img{
+    margin: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.logo_img{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F1F1F1;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+.reviews{
+    height: 800px;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews_content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews_content_window{
+    width: 35%;
+    box-shadow: 0px 0px 12px 3px rgb(34 60 80 / 20%);
+    border-radius: 10px;
+    padding: 4%;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
 
