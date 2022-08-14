@@ -21,9 +21,11 @@
                         <div class="nav_cont">
                             <div class="nav_tel">
                                 <img src="/img/Call.png" alt="#">
-                                <span class="tel_numb">+420 000 000 000</span>
+                                <!-- <span class="tel_numb">+420 000 000 000</span> -->
+                                <a class="tel_numb" href="tel:+420 000 000 000">+420 000 000 000</a>
                                  <img src="/img/Email.png" alt="#">
-                                <span class="tel_numb">+420 000 000 000</span>
+                                <!-- <span class="tel_numb">+420 000 000 000</span> -->
+                                <a class="tel_numb" href="tel:+420 000 000 000">+420 000 000 000</a>
                             </div>
     
                             <ul>
@@ -39,7 +41,7 @@
                     <div class="property">
                         <div class="property_text">
                             <p class="fs20px">Чешская служба недвижимости -<br> ваш управляющий недвижимостью</p>
-                            <h1>НАУЧИМ ВАШУ<br> НЕДВИЖИМОСТЬ<br> ЗАРАБАТЫВАТЬ БОЛЬШЕ</h1>
+                            <h1 class="fs60px">НАУЧИМ ВАШУ<br> НЕДВИЖИМОСТЬ<br> ЗАРАБАТЫВАТЬ БОЛЬШЕ</h1>
                             <span>Давайте встретимся</span>
                         </div>
                         
@@ -47,13 +49,13 @@
                                 <span class="fs20px">Не стесняйтесь связаться с нами</span>
                                 <div class="form_feedback_group">
                                     <label for="name">Имя</label>
-                                    <input type="text" name="" id="">
+                                    <input type="text" name="text" id="">
                                 
                                     <label for="tel_numb">Номер телефона</label>
-                                    <input type="tel" name="" id="">
+                                    <input type="number" name="tel" id="">
                                 
                                     <label for="Email">Email</label>
-                                    <input type="email" name="" id="">
+                                    <input type="email" name="email" id="">
                                 </div>
                                 <button class="btn">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
                         </fieldset>
@@ -168,49 +170,73 @@
                     </div>
                 </div>
             </section>
-                <div>
-                    <div>
-                        <img src="" alt="">
+            <section class="video_review">
+                <div class="review_wraper">
+                    <div class="review_media">
+                        <img src="/img/modern-apartment-architecture big.png" alt="#">
                         <video src=""></video>
                     </div>
-                    <div><h3>ТЫ ЕЩЕ думешь? ВСТРЕтимся И ОБСУДИМ ВСЕ ЛИЧНО</h3></div>
-                    <button>ЗАПИСАТЬСЯ НА ПРИЕМ</button>
-                </div>
-            
-            <footer>
-                <img src="" alt="#">
-                <div>
-                    <div>
-                        <h3>Быстрый контакт</h3>
-                        <span>+420 000 000 000</span>
-                        <span>+420 000 000 000</span>
-                        <h3>Платежная информация:</h3>
-                        <span>info</span>
-                        <span>info</span>
-                        <span>info</span>
-                    </div>
-                    <div>
-                        <h3>НАВИГАЦИЯ</h3>
-                        <ul>
-                            <li>Услуги</li>
-                            <li>Наши проекты</li>
-                            <li>О нас</li>
-                            <li>Контакты</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>ПОЛЕЗНЫЕ ССЫЛКИ</h3>
-                        <span>Cookies</span>
-                        <span>Обработка персональных данных</span>
+                    <div class="review_text">
+                        <div class="text_question">
+                            <h3 class="fs60px">ТЫ ЕЩЕ ДУМАЕШЬ? ВСТРЕТИМСЯ И ОБСУДИМ ВСЕ ЛИЧНО</h3>
+                        </div>
                         <div>
-                            <a href=""><img src="" alt="#"></a>
-                            <a href=""><img src="" alt="#"></a>
+                            <button class="btn">ЗАПИСАТЬСЯ НА ПРИЕМ</button>
                         </div>
                     </div>
                 </div>
-                <span>Все права защищены 2022</span>
+            </section>
+            
+            <footer>
+                <div class="footer_logo">
+                    <a href="#">
+                        <img src="/img/31.png">
+                    </a>
+                </div>
+                <div class="footer_content">
+                    <div class="footer_left">
+                        <h3 class="fs30px">Быстрый контакт</h3>
+                        <div>
+                            <img src="/img/Call.png" alt="#">
+                            <!-- <span class="tel_numb">+420 000 000 000</span> -->
+                            <a class="tel_numb" href="tel:+420 000 000 000">+420 000 000 000</a>
+                        </div>
+                        <div>
+                            <img src="/img/Email.png" alt="#">
+                            <!-- <span class="tel_numb">+420 000 000 000</span> -->
+                            <a class="tel_numb" href="tel:+420 000 000 000">+420 000 000 000</a>
+                        </div>
+                        <h3 class="fs30px">Платежная информация:</h3>
+                        <span>CZECH PROPERTY SERVICE, S. R. O.</span>
+                        <span>Na Plzeňce 1166/4</span>
+                        <span>Praha 5 – Smíchov 150 00</span>
+                    </div>
+                    <div class="footer_center">
+                        <h3 class="fs30px">НАВИГАЦИЯ</h3>
+                        <ul class="fs20px">
+                            <li><a href="">Услуги</a> </li>
+                            <li><a href="">Наши проекты</a></li>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_right">
+                        <h3 class="fs30px">ПОЛЕЗНЫЕ ССЫЛКИ</h3>
+                        <div>
+                            <p>Cookies</p>
+                            <p>Обработка персональных данных</p>
+                        </div>
+                        <div>
+                            <a href=""><img src="/img/insta.png" alt="#"></a>
+                            <a href=""><img src="/img/insta2.png" alt="#"></a>
+                            <a href=""><img src="/img/fase.png" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span  class="fs20px">Все права защищены 2022</span>
+                </div>
             </footer>
-
         </div>
     </div>
 
