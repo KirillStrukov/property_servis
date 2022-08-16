@@ -37,7 +37,8 @@ body{
 .fs60px{
     font-size: 60px;
     letter-spacing: 6px;
-    margin: 20px 0px;
+    margin: 6%
+    , 0px;
 }
 
 .property_servis .container {
@@ -126,7 +127,7 @@ footer li{
 
 
 .property_text{
-    margin-left: 2%
+    margin-left: 4%;
 }
 
 .property_text span{
@@ -367,4 +368,107 @@ footer a{
 
 
 /* ---------------------------------------------------------------------------------------------- */
+                                          /* услуги */
+/* ---------------------------------------------------------------------------------------------- */
 
+.property_servis .container .header_services {
+    border-bottom: 1px solid #3D433F;
+    padding: 70px 0;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+                                          /* КОМПЛЕКСНОЕ УПРАВЛЕНИЕ НЕДВИЖИМОСТЬЮ */
+/* ---------------------------------------------------------------------------------------------- */
+.property_text_content{
+    margin-top: 7%;
+}
+
+.property_text_content h2{
+    margin: 25px 0;
+}
+
+.btn_complex{
+    margin-top: 7%;
+}
+
+.property_text_img{
+    text-align: end;
+    width: 96%;
+    margin: 8% 0px;
+}
+
+.property_text_list{
+    width: 80%;
+    margin: auto;
+}
+
+.property_text_list ul{
+    list-style: none;
+}
+
+.property_text_list li{
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    margin-top: 120px;
+}
+
+.property_text_list ul ::before{
+    content: '';
+    display: block;
+    width: 97px;
+    height: 97px;
+    background-image: url(../img/Up.png);
+    position: absolute;
+    background-repeat: round;
+    left: -114px;
+    bottom: -15px;
+}
+
+.benefits wrapper{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    height: 630px;
+    align-items: center;
+}
+
+.benefits_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 31.3%;
+    height: 75%;
+    justify-content: center;
+}
+
+.benefits_content > span{
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.benefits_content:hover{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(34, 60, 80, 0.2);
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+                                          /* ДОЛГОСРОЧНАЯ АРЕНДА НЕДВИЖИМОСТИ*/
+/* ---------------------------------------------------------------------------------------------- */
+
+.property_text_page_4{
+    margin: 0 2%;
+    display: flex;
+    margin-top: 7%;
+}
+
+.property_text_img_page_4{
+    width: 45%;
+}
+
+.property_text_content_page_4{
+    width: 66%;
+}
