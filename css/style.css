@@ -128,6 +128,7 @@ footer li{
 
 .property_text{
     margin-left: 4%;
+    width: 85%;
 }
 
 .property_text span{
@@ -471,4 +472,103 @@ footer a{
 
 .property_text_content_page_4{
     width: 66%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+                                          /*наши проекты*/
+/* ---------------------------------------------------------------------------------------------- */
+
+.promo_content_our_projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.promo_content_our_projects_photo{
+    width: 40%;
+    height: 506px;
+    background-image: url(/img/modern-apartment-architecture\ big.png);
+    background-repeat: no-repeat;
+}
+
+.promo_content_our_projects_content{
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 10px;
+    height: 71%;
+    width: 74%;
+    margin: 34px 0px 0px 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 15px;
+}
+
+.review_text_our_projects{
+    width: 77%;
+    height: 61%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+                                          /*apartments*/
+/* ---------------------------------------------------------------------------------------------- */
+
+.promo_content_apartments{
+    margin: 0 5%;
+    text-align: center;
+}
+
+.promo_content_apartments h2,
+.promo_content_apartments p,
+.project_praha_video{
+    margin: 7% 0px;
+}
+
+.promo_content_apartments p {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.project_praha_video iframe {
+    border-radius: 10px;
+}
+
+.photo_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 1718px;
+    align-content: space-around;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+                                          /*about us*/
+/* ---------------------------------------------------------------------------------------------- */
+
+.about_us{
+    margin: 0 5%;
+    text-align: center;
+}
+
+.about_us h2{
+    margin: 6% 0;
+}
+
+.about_us_content{
+    text-align: start;
+    width: 70%;
+}
+
+.about_us_text{
+    margin-top: 3%;
+}
+
+.about_ush2{
+    margin-bottom: 7%;
 }
