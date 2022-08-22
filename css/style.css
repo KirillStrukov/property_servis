@@ -4,7 +4,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* font-family: 'Roboto', sans-serif; */
 body{
     background-color: #ededed;
 }
@@ -37,28 +36,27 @@ body{
 .fs60px{
     font-size: 60px;
     letter-spacing: 6px;
-    margin: 6%
-    , 0px;
+    margin: 6%, 0px;
 }
 
 .property_servis .container {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
 }
 .property_servis .container .header {
-  background-image: url(/img/Group108.png);
-  height: 1032px;
-  display: flex;  
-  flex-direction: column;
-}/*# sourceMappingURL=style.css.map */
-
+    background-image: url(/img/Group108.png);
+    height: 1032px;
+    display: flex;  
+    flex-direction: column;
+}
 
 .nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 2%;
 }
 
 .nav ul a{
@@ -128,7 +126,7 @@ footer li{
 
 .property_text{
     margin-left: 4%;
-    width: 85%;
+    max-width: 85%;
 }
 
 .property_text span{
@@ -161,8 +159,9 @@ footer li{
 
 .form_feedback_group input{
     width: 324px;
-        height: 54px;
-        border: solid 1px #c4c4c4;
+    height: 54px;
+    border: solid 1px #c4c4c4;
+    font-size: 30px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -175,6 +174,10 @@ input[type="number"]:hover,
 input[type="number"]:focus {
     appearance: none;
     -moz-appearance: textfield;
+}
+fieldset span{
+    text-align: center;
+    font-weight: 500;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -191,15 +194,16 @@ input[type="number"]:focus {
     height: 1032px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-content: space-around;
 }
 
 .promo_content_block{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 35%;
-    height: 33%;
+    width: 40%;
+    height: 37%;
     justify-content: space-between;
 }
 
@@ -246,7 +250,8 @@ input[type="number"]:focus {
 }
 
 .project_window img{
-    margin: 20px;
+    margin: 20px 0;
+    width: 100%;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -256,10 +261,12 @@ input[type="number"]:focus {
     height: 300px;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: #F1F1F1;
+    padding: 0 2%;
 }
 
-/* ------------------------------------------------------------------------------------------------ */
+/* -----------------------------------------------------------  ------------------------------------ */
 
 .reviews{
     height: 800px;
@@ -291,6 +298,14 @@ input[type="number"]:focus {
 
 .review_media{
     text-align: center;
+}
+
+.review_media iframe{
+    width: 272px;
+    height: 289px;
+    margin-top: -24%;
+    margin-left: -15%;
+    border-radius: 10px;
 }
 
 .review_text{
@@ -328,7 +343,8 @@ footer a{
 .footer_content{
     display: flex;
     justify-content: space-around;
-    height: 50%;
+    margin: 0 2%;
+    flex-wrap: wrap;
 }
 
 .footer_left{
@@ -346,6 +362,13 @@ footer a{
 .footer_left img, 
 .footer_left a{
     vertical-align: middle;
+}
+
+.footer_left,
+.footer_right,
+.footer_center{
+    margin: 2%;
+    min-height: 360px;
 }
 
 .footer_right{
@@ -367,7 +390,74 @@ footer a{
     margin-top: 20px;
 }
 
+/* ---------------------------------------------------------------------------------------------- */
+                                          /* гамбургер */
+/* ---------------------------------------------------------------------------------------------- */
 
+.burger {
+	display: flex;
+	justify-content: flex-end;
+    display: none;
+}
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20%;
+	height: 100%;
+	padding: 15px;
+    background: #fff0;
+	transform: translateX(100%);
+	transition: transform 0.5s; 
+}
+
+.menu.active {
+	transform: translateX(0);
+}
+
+.menu li {
+	list-style-type: none;
+    /* white-space: nowrap;  */
+}
+-----------------------------------------------------------------------------------------------------------
 /* ---------------------------------------------------------------------------------------------- */
                                           /* услуги */
 /* ---------------------------------------------------------------------------------------------- */

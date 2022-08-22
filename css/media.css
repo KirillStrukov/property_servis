@@ -1,0 +1,54 @@
+@media(max-width: 1280px){
+    .fs60px{
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 1200px){
+    .nav_tel{
+        width: 80%;
+    }
+}
+
+@media(max-width: 1152px){
+    
+}
+
+@media(max-width: 1024px){
+    .burger{
+        display: block;
+    }
+
+    .nav{
+        justify-content: space-between;
+    }
+
+    .nav ul{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 35%;
+    }
+
+    .nav_cont{
+        display: none;
+    }
+    .nav button{
+        display: none;
+    }
+
+    .promo_content h2, .reviews h2{
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 768px){
+    
+}
+
+@media(max-width: 425px){
+    .form_feedback{
+        display: none;
+    }
+}
