@@ -18,11 +18,9 @@
     .burger{
         display: block;
     }
-
     .nav{
         justify-content: space-between;
     }
-
     .nav ul{
         display: flex;
         justify-content: space-around;
@@ -30,25 +28,74 @@
         align-items: flex-end;
         margin-top: 35%;
     }
-
     .nav_cont{
         display: none;
     }
     .nav button{
         display: none;
     }
-
     .promo_content h2, .reviews h2{
         font-size: 45px;
+    }
+    .property{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .review_wraper{
+        height: 910px;
+    }
+    .review_wraper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .review_text{
+        height: auto;
     }
 }
 
 @media(max-width: 768px){
-    
+    .menu{
+        width: 30%;;
+    }
+    .promo_content_way{
+        height: auto;
+        min-height: 1344px;
+        margin: 0 9%;
+        justify-content: space-around;
+    }
+    .promo_content_block{
+        display: flex;
+        width: 83%;
+        gap: 30px;
+    }
+    .content_project{
+        align-items: center;
+    }
+    .project_window{
+        width: 80%;
+    }
+}
+
+@media(max-width: 640px){
+    .reviews_content{
+        gap: 30px;
+        justify-content: space-evenly;
+    }
+    .reviews_content_window{
+        width: 80%;
+    }
+    .fs60px{
+        font-size: 30px;
+    }
+    .promo_content h2, .reviews h2{
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
 }
 
 @media(max-width: 425px){
     .form_feedback{
         display: none;
+        justify-content: center;
     }
 }
