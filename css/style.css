@@ -83,6 +83,7 @@ body{
 .tel_numb{
     text-decoration: none;
     color: black;
+    white-space: nowrap;
 }
 
 .nav_tel .mail{
@@ -333,7 +334,8 @@ footer a{
     font-size: 20px;
     letter-spacing: 4px;
     display: inline-block;
-    margin-right: 7%;
+    width: 32.3%;
+    white-space: nowrap;
 }
 
 .footer_logo{

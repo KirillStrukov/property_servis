@@ -55,7 +55,8 @@
 
 @media(max-width: 768px){
     .menu{
-        width: 30%;;
+        width: 30%;
+        transform: translateX(155%);
     }
     .promo_content_way{
         height: auto;
@@ -91,11 +92,66 @@
         font-size: 30px;
         letter-spacing: 4px;
     }
+    footer{
+        height: auto;
+    }
+    .footer_content{
+        justify-content: flex-start;
+    }
+    .footer_left, .footer_right, .footer_center{
+        min-height: 210px;
+        gap: 10px;
+    }
 }
 
-@media(max-width: 425px){
+@media(max-width: 426px){
     .form_feedback{
-        display: none;
-        justify-content: center;
+        margin: 0;
+        width: 85%;
+        height: 55%;
+    }
+    .property_text{
+        margin-top: 23%;
+    }
+    .review_media img{
+        width: 90%;
+    }
+    .review_text{
+        align-items: center;
+    }
+    .promo_content h2, .reviews h2{
+        font-size: 25px;
+    }
+    .fs30px{
+        font-size: 23px;
+    }
+    .fs20px{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 376px){
+    .form_feedback_group input{
+        width: 250px;
+    }   
+}
+
+@media(max-width: 320px){
+    .fs60px,
+    .fs30px{
+        letter-spacing: 2px;
+    }
+    .btn{
+        width: 255px;
+    }
+    .logo_img{
+        height: auto;
+    }
+    .review_wraper{
+        height: 750px;
+    }
+    .review_media iframe{
+        width: 215px;
+        height: 215px;
     }
 }
