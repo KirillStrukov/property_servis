@@ -446,7 +446,7 @@ footer a{
 	width: 20%;
 	height: 100%;
 	padding: 15px;
-    background: #fff0;
+    background: #ededed;
 	transform: translateX(100%);
 	transition: transform 0.5s; 
 
@@ -577,26 +577,32 @@ footer a{
     flex-wrap: wrap;
     justify-content: space-around;
     width: 95%;
+    align-content: space-around;
+    height: 1500px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .promo_content_our_projects_photo{
-    width: 40%;
-    height: 506px;
+    width: 37%;
+    height: 450px;
     background-image: url(/img/modern-apartment-architecture\ big.png);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .promo_content_our_projects_content{
     background-color: white;
     border: 2px solid green;
     border-radius: 10px;
-    height: 71%;
-    width: 74%;
+    height: 80%;
+    width: 70%;
     margin: 34px 0px 0px 234px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0px 15px;
+    justify-content: space-between;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 30px 10px rgb(34 60 80 / 20%);
 }
 
 .review_text_our_projects{

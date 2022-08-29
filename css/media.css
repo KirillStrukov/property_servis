@@ -8,10 +8,19 @@
     .nav_tel{
         width: 80%;
     }
+    .promo_content_our_projects{
+        height: 2000px;
+    }
+    .promo_content_our_projects_content{
+        margin: 60% auto auto;
+    }
 }
 
 @media(max-width: 1152px){
-    
+    .promo_content_our_projects_content h3,
+    .promo_content_our_projects_content p{
+        letter-spacing: 1px;
+    }
 }
 
 @media(max-width: 1024px){
@@ -43,19 +52,51 @@
     }
     .review_wraper{
         height: 910px;
-    }
-    .review_wraper{
         flex-wrap: wrap;
         justify-content: center;
     }
     .review_text{
         height: auto;
     }
+    /* ------------------------------------------------------------------------------ */
+    .promo_content_our_projects_photo{
+        margin-bottom: 18%;
+    }
+    .promo_content_our_projects{
+        height: auto;
+    }
+    .promo_content_our_projects_content{
+        height: 65%;
+    }
+    .promo_content_our_projects_content h3{
+        font-size: 25px;
+    }
+    .promo_content_our_projects_content p{
+        font-size: 16px;
+    }
+    .review_text_our_projects h3{
+
+    }
+    .text_question{
+        margin-bottom: 5%;
+    }
+    .btn_mini{
+        font-size: 17px;
+        width: 185px;
+        height: 38px;
+    }
+    .review_text_our_projects h3{
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+    .review_text_our_projects{
+        text-align: center;
+    }
 }
 
 @media(max-width: 768px){
     .menu{
-        width: 30%;
+        width: 175px;
         transform: translateX(155%);
     }
     .promo_content_way{
@@ -75,6 +116,25 @@
     .project_window{
         width: 80%;
     }
+    .fs60px{
+        font-size: 40px;
+    }
+    /* -------------------------------------------------------- */
+    .promo_content_our_projects_content h3{
+        font-size: 20px;
+    }
+    .promo_content_our_projects_content p,
+    .btn_mini{
+        font-size: 15px;
+    }
+    .review_text_our_projects h3{
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    .review_text_our_projects{
+        height: 35%;
+    }
+
 }
 
 @media(max-width: 640px){
@@ -90,7 +150,7 @@
     }
     .promo_content h2, .reviews h2{
         font-size: 30px;
-        letter-spacing: 4px;
+        letter-spacing: 3px;
     }
     footer{
         height: auto;
@@ -101,6 +161,20 @@
     .footer_left, .footer_right, .footer_center{
         min-height: 210px;
         gap: 10px;
+    }
+    /* ------------------------------------------------------------- */
+    .promo_content_our_projects{
+        flex-direction: column;
+    }
+    .promo_content_our_projects_photo{
+        width: 82%;
+    }
+    .promo_content_our_projects_content{
+        height: 45%;
+    }
+    .review_text_our_projects h3{
+        font-size: 24px;
+        letter-spacing: 2px;
     }
 }
 
@@ -128,11 +202,21 @@
     .fs20px{
         font-size: 17px;
     }
+    .promo_content_our_projects_photo{
+        width: 95%;
+    }
+    .promo_content_our_projects_content{
+        height: 55%
+    }
 }
 
 @media(max-width: 376px){
     .form_feedback_group input{
         width: 250px;
+    }
+    .review_text_our_projects h3{
+        font-size: 23px;
+        letter-spacing: 1px;
     }   
 }
 
@@ -147,11 +231,19 @@
     .logo_img{
         height: auto;
     }
-    .review_wraper{
+    /* врапер с двумя п я знаю */
+    .review_wraper{    
         height: 750px;
     }
     .review_media iframe{
         width: 215px;
         height: 215px;
+    }
+    /* -------------------------------------------------------- */
+    .promo_content_our_projects_content{
+        height: 65%;
+    }
+    .review_text_our_projects h3{
+        font-size: 20px;
     }
 }
