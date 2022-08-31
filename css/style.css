@@ -36,7 +36,7 @@ body{
 .fs60px{
     font-size: 60px;
     letter-spacing: 6px;
-    margin: 6%, 0px;
+    margin: 6% 0;
 }
 
 .property_servis .container {
@@ -56,7 +56,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 2%;
+    padding: 10px 2%;
 }
 
 .nav ul a{
@@ -125,7 +125,7 @@ footer li{
 
 
 .property_text{
-    margin-left: 4%;
+    margin-left: 5%;
     max-width: 85%;
 }
 
@@ -203,7 +203,7 @@ fieldset span{
     flex-direction: column;
     align-items: flex-start;
     width: 40%;
-    height: 37%;
+    height: 45%;
     justify-content: space-between;
 }
 
@@ -216,6 +216,7 @@ fieldset span{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
+    gap: 15px;
 }
 
 .why_content{
@@ -323,7 +324,7 @@ fieldset span{
 /* ------------------------------------------------------------------------------------------------ */
 
 footer{
-    height: 602px;
+    height: auto;
     background-color: #f1f1f1;
 }
 
@@ -449,27 +450,26 @@ footer a{
     background: #ededed;
 	transform: translateX(100%);
 	transition: transform 0.5s; 
-
+    display: none;
 }
 
 .menu.active {
 	transform: translateX(0);
+    display: block;
 }
 
 .menu li {
 	list-style-type: none;
     white-space: nowrap; 
 }
------------------------------------------------------------------------------------------------------------
 /* ---------------------------------------------------------------------------------------------- */
                                           /* услуги */
 /* ---------------------------------------------------------------------------------------------- */
 
 .property_servis .container .header_services {
     border-bottom: 1px solid #3D433F;
-    padding: 70px 0;
+    /* padding: 50px 0; */
 }
-
 
 /* ---------------------------------------------------------------------------------------------- */
                                           /* КОМПЛЕКСНОЕ УПРАВЛЕНИЕ НЕДВИЖИМОСТЬЮ */
@@ -483,13 +483,13 @@ footer a{
 }
 
 .btn_complex{
-    margin-top: 7%;
+    margin: 6% 0 9% 0;
 }
 
 .property_text_img{
     text-align: end;
-    width: 96%;
-    margin: 8% 0px;
+    width: 100%;
+    margin: 8% auto;
 }
 
 .property_text_list{
@@ -527,6 +527,7 @@ footer a{
     justify-content: space-around;
     height: 630px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .benefits_content{
@@ -534,9 +535,10 @@ footer a{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 31.3%;
+    width: 311px;
     height: 75%;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
 
 .benefits_content > span{
@@ -563,10 +565,14 @@ footer a{
     width: 45%;
 }
 
-.property_text_content_page_4{
-    width: 66%;
+.property_text_img_page_4 img{
+    width: 100%;
 }
 
+.property_text_content_page_4{
+    width: 66%;
+    margin-left: 2%;
+}
 
 /* ---------------------------------------------------------------------------------------------- */
                                           /*наши проекты*/
@@ -645,6 +651,74 @@ footer a{
     align-content: space-around;
 }
 
+/* -------------------------------------------------------------- */
+
+#myImg:hover {opacity: 0.7;}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* ---------------------------------------------------------------------------------------------- */
                                           /*about us*/
@@ -667,7 +741,7 @@ footer a{
 .about_us_text{
     margin-top: 3%;
 }
-
+/* 
 .about_ush2{
     margin-bottom: 7%;
-}
+} */

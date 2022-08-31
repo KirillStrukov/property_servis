@@ -74,9 +74,6 @@
     .promo_content_our_projects_content p{
         font-size: 16px;
     }
-    .review_text_our_projects h3{
-
-    }
     .text_question{
         margin-bottom: 5%;
     }
@@ -92,6 +89,33 @@
     .review_text_our_projects{
         text-align: center;
     }
+    .benefits wrapper{
+        gap: 20px;
+        height: auto;
+        padding: 10% 0;
+    }
+    /* ------------------------------------------------------------- */
+    .promo_content_apartments{
+        margin: 0;
+    }
+    .project_praha_video{
+        margin: 7% 7px;
+    }
+    .project_praha_video iframe{
+        max-width: 100%;
+        min-height: 100px;
+        max-height: 408px;
+    }
+    .photo_gallery{
+        flex-direction: column;
+        gap: 25px;
+        margin: auto;
+        align-items: center;
+    }
+    .photo_gallery img{
+        width: 90%;
+    }
+    /* ----------------------------------------------------------- */
 }
 
 @media(max-width: 768px){
@@ -134,7 +158,26 @@
     .review_text_our_projects{
         height: 35%;
     }
-
+    /* -------------------------------------------------------- */
+    .property_text{
+        margin: auto;
+    }
+    .property_text_img{
+        width: 100%;
+        text-align: center;
+    }
+    .property_text_question{
+        text-align: center;
+    }
+    /* -------------------------------------------------------------- */
+    .property_text_page_4{
+        flex-direction: column;
+        align-items: center;
+    }
+    .property_text_img_page_4{
+        width: 90%;
+    }
+    /* ------------------------------------------------------------------------ */
 }
 
 @media(max-width: 640px){
@@ -176,6 +219,26 @@
         font-size: 24px;
         letter-spacing: 2px;
     }
+    /* --------------------------------------------------------------------- */
+    .about_us_content{
+        text-align: center;
+        width: auto;
+    }
+    .property_text_list{
+        width: 90%;
+    }
+    .property_text_list ul ::before{
+        bottom: -10px;
+    }
+    .property_text_list li{
+        margin-left: 75px;
+        margin-top: 85px;
+    }
+    /* -------------------------------------------------------------- */
+    .property_text_content_page_4{
+        width: 90%;
+        margin: 0;
+    }
 }
 
 @media(max-width: 426px){
@@ -186,6 +249,11 @@
     }
     .property_text{
         margin-top: 23%;
+        margin: 0 4%;
+        max-width: 100%;
+    }
+    .property_text_content{
+        text-align: center;
     }
     .review_media img{
         width: 90%;
@@ -193,13 +261,23 @@
     .review_text{
         align-items: center;
     }
+    .review_media iframe{
+        margin-left: auto;
+    }
     .promo_content h2, .reviews h2{
         font-size: 25px;
+    }
+    .fs60px{
+        font-size: 25px;
+        letter-spacing: 5px;
     }
     .fs30px{
         font-size: 23px;
     }
     .fs20px{
+        font-size: 17px;
+    }
+    .property_text_list li{
         font-size: 17px;
     }
     .promo_content_our_projects_photo{
@@ -208,6 +286,29 @@
     .promo_content_our_projects_content{
         height: 55%
     }
+    /* ------------------------------------------------------------ */
+    .about_us_content{
+        text-align: center;
+        width: auto;
+    }
+    .property_text_img img{
+    width: 100%;
+    }
+    .property_text_list{
+        width: 100%;
+    }
+    .property_text_list li{
+        margin-top: 80px;
+    }
+    .property_text_list ul ::before{
+        width: 85px;
+        height: 85px;
+        left: -83px;
+    }
+    .property_servis .container .header_services{
+        padding: 20px 0;
+    }
+    /* --------------------------------------------------------- */
 }
 
 @media(max-width: 376px){
@@ -217,7 +318,10 @@
     .review_text_our_projects h3{
         font-size: 23px;
         letter-spacing: 1px;
-    }   
+    } 
+    .property_text_list li{
+        margin-top: 70px;
+    }
 }
 
 @media(max-width: 320px){
